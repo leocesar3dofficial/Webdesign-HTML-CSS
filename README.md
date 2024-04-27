@@ -1,1 +1,5 @@
-# Webdesign-HTML-CSS
+# Webdesign HTML and CSS
+
+## Features
+
+- Standard Brochure Website

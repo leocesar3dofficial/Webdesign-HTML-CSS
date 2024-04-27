@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços de Web design" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <script src="script/navbar.js" defer></script>
+    <script src="script/accordion.js" defer></script>
+    <title>Web design para sua empresa</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <img class="brand-title" src="images/logo-header.svg" alt="logo">
+            <a href="#" id="nav-hamburger-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul id="nav-links-list">
+                <li><a class="nav-link" href="#home">Início</a></li>
+                <li><a class="nav-link" href="#services">Serviços</a></li>
+                <li><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                <li><a class="nav-link" href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home" class="basic-card-container">
+        <img src="images/blob01.svg" alt="shape">
+        <div id="main-content">
+            <article>
+            <h2>Web design para pequenas empresas</h2>
+            <p>Sem construtores de páginas, como o WordPress ou Wix. Oferecemos sites 100% codificados à mão com
+                resultados
+                superiores</p>
+                <a class="linkbtn" href="#contact">Entre em contato</a>
+            </article>
+            <img src="images/hero01.svg" alt="">
+        </div>
+    </main>
+    <section id="services">
+        <article class="basic-card-container">
+            <h2><span class="colored-text">O que</span> fazemos</h2>
+            <hr>
+            <p>Somos especializados em web design para pequenas empresas e clientes em qualquer lugar no Brasil. <span
+                    class="colored-text">Cada
+                    linha
+                    de código é escrita à mão</span> para garantir o melhor desempenho, o que ajuda a atrair mais
+                clientes
+                para o
+                seu
+                site e gerar mais receita para o seu negócio.</p>
+            <a class="linkbtn" href="#contact">Saiba mais</a>
+        </article>
+        <div class="flex">
+            <article class="card-icon">
+                <img class="stroke-1" src="images/mobile-phone-icon.svg" alt="mobile phone icon">
+                <h2>Design para dispositivos móveis</h2>
+                <p>Começamos a construir seu site para dispositivos móveis primeiro, mas que funcione perfeitamente
+                    também em tablets e computadores desktop.</p>
+            </article>
+            <article class="card-icon">
+                <img class="stroke-1" src="images/responsive-icon.svg" alt="responsive icon">
+                <h2>Totalmente responsivo</h2>
+                <p>Seu site caberá em todos os tamanhos de telas móveis, tablets e computadores desktop para que seus
+                    clientes possam acessá-lo de qualquer lugar.</p>
+            </article>
+            <article class="card-icon">
+                <img class="stroke-1" src="images/rocket-icon.svg" alt="rocket icon">
+                <h2>Otimização</h2>
+                <p>60% de todo o tráfego da Internet está em dispositivos móveis, por isso otimizamos o design para
+                    smartphones para ter o melhor desempenho nos mecanismos de pesquisa.</p>
+            </article>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Nosso Portfólio</h2>
+    </section>
+    <section id="contact">
+        <h2><span class="colored-text">Nos envie</span> uma mensagem</h2>
+        <form id="contact-form" method="post" name="form"><input type="hidden" name="form-name" value="form">
+            <label for="name">Nome</label>
+            <input id="name" name="name" placeholder="Nome" type="text" tabindex="1" required>
+            <label for="business">Qual é o seu negócio?</label>
+            <input id="business" name="business" placeholder="Negócio" type="text" tabindex="2" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="Endereço de email" type="email" tabindex="3" required>
+            <label for="phone">Telefone para contato</label>
+            <input id="phone" name="phone" placeholder="Telefone" type="tel" tabindex="4" required>
+            <label for="message">Descreva sua necessidade</label>
+            <textarea id="message" name="message" placeholder="Digite sua mensagem aqui..." tabindex="5"
+                required></textarea>
+            <button id="contact-submit" name="submit" type="submit" data-submit="...Enviando">Enviar</button>
+        </form>
+    </section>
+    <section id="questions-and-answers" class="basic-card-container">
+        <h2><span class="colored-text">Perguntas</span> frequentes</h2>
+        <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus"
+            sign is replaced with a "minus" sign.</p>
+        <button class="accordion">Section 1</button>
+        <div class="accordion-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion">Section 2</button>
+        <div class="accordion-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="accordion-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footerdiv basic-card-container direction-row">
+            <article id="navigation">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </article>
+            <article class="contact-info">
+                <h4>Contato direto</h4>
+                <address>
+                    <a href="mailto:jimdf@rock.com.br">jim@rock.com.br</a>
+                    <br>
+                    <a href="tel:+13115552368">(61) 9555-2368</a>
+                </address>
+            </article>
+            <article id="social">
+                <h4>Redes sociais</h4>
+                <div>
+                    <a class="social-media-icon" href="">
+                        <img src="images/share-icon.svg" alt="share icon">
+                    </a>
+                    <a class="social-media-icon" href="">
+                        <img src="images/facebook-icon.svg" alt="facebook icon">
+                    </a>
+                    <a class="social-media-icon" href="">
+                        <img src="images/instagram-icon.svg" alt="instagram icon">
+                    </a>
+                    <a class="social-media-icon" href="">
+                        <img src="images/twitter-icon.svg" alt="twitter icon">
+                    </a>
+                    <a class="social-media-icon" href="">
+                        <img src="images/youtube-icon.svg" alt="youtube icon">
+                    </a>
+                    </a>
+                    <a class="social-media-icon" href="">
+                        <img src="images/linkedin-icon.svg" alt="linkedin icon">
+                    </a>
+                </div>
+            </article>
+            <img src="images/hero-footer.svg" alt="">
+        </div>
+        <h6>Copyright © <span class="colored-text">NOME EMPRESA</span>. Todos os direitos reservados.</h6>
+    </footer>
+    <a id="whats-icon" href="https://wa.me/5561982195325">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp icon" title="Entre em contato pelo WhatsApp">
+    </a>
+</body>
+
+</html>

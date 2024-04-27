@@ -1,0 +1,365 @@
+@import './variables.css';
+
+/* 
+====================================
+BASICS
+====================================
+*/
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', Tahoma, Arial, sans-serif;
+    }
+}
+
+body {
+    color: var(--color-dark);
+    font-size: var(--font-size-global);
+    line-height: 1.4;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: normal;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+a:link,
+a:visited {
+    color: var(--color-dark);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    color: var(--color-blue);
+}
+
+ul {
+    padding-inline-start: 0;
+    margin-block: 0;
+    text-align: left;
+}
+
+ul>li {
+    list-style: none;
+}
+
+/* 
+====================================
+BUTTON LINK
+====================================
+*/
+
+.linkbtn:link,
+.linkbtn:visited {
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 0 0;
+}
+
+.linkbtn:hover,
+.linkbtn:active {
+    background-color: var(--color-dark);
+    font-size: calc(var(--font-size-global) * 1.1);
+    transition: all 0.25s;
+}
+
+/* 
+====================================
+MAIN CARD
+====================================
+*/
+
+.basic-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem;
+    background-color: var(--color-light-grey);
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#home {
+    margin-top: 5rem;
+}
+
+.direction-row {
+    flex-direction: row;
+}
+
+/* 
+====================================
+CARD WITH ICON
+====================================
+*/
+
+.card-icon {
+    width: auto;
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-icon>img {
+    object-fit: cover;
+    transform: translateY(-4rem);
+    border-radius: 50%;
+    width: 40%;
+    background-color: var(--color-dark);
+    z-index: 5;
+    height: auto;
+}
+
+.card-icon>h2 {
+    transform: translateY(-2rem);
+}
+
+/* 
+====================================
+MAIN SECTION
+====================================
+*/
+
+main>* {
+    z-index: 3;
+}
+
+main>img {
+    position: absolute;
+    z-index: 2;
+    animation: card-shape-roll 60s alternate ease-in-out infinite;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+#main-content>article>h2{
+    color: var(--color-blue);
+}
+
+#main-content>img{
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+}
+
+@keyframes card-shape-roll {
+    0% {
+        transform: translate(-25%, -50%) scale(1) rotate(0);
+    }
+
+    100% {
+        transform: translate(5%, 75%) scale(2) rotate(360deg);
+    }
+}
+
+/* 
+====================================
+CONTACT FORM
+====================================
+*/
+
+#contact {
+    display: inline-block;
+    width: 50%;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 0rem 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 10rem;
+}
+
+input,
+select,
+textarea,
+form>button {
+    font-family: inherit;
+    font-size: var(--font-size-global);
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+    background-color: var(--color-blue);
+    color: var(--color-light);
+}
+
+form>button {
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+}
+
+form>button:hover {
+    background-color: var(--color-dark);
+    font-size: calc(var(--font-size-global) * 1.1);
+    transition: all 0.25s;
+}
+
+::placeholder {
+    color: var(--color-mid-grey);
+}
+
+/* 
+====================================
+FOOTER
+====================================
+*/
+
+.social-media-icon {
+    width: 2rem;
+    margin: 0.3rem 1rem 0rem 0rem;
+}
+
+.social-media-icon>img {
+    width: 2.5rem;
+}
+
+.social-media-icon:hover,
+.social-media-icon:active {
+    transform: scale(1.2);
+    transition: all 0.25s;
+}
+
+.contact-info,
+#social, #navigation {
+    margin: 1rem 5rem 1rem 1rem;
+}
+
+.footerdiv>img{
+    max-width: 50%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+/* 
+====================================
+OTHER
+====================================
+*/
+
+#whats-icon {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 2rem;
+    z-index: 3;
+    margin: 0.5rem;
+}
+
+#whats-icon:hover {
+    width: 3rem;
+    transition: all 0.25s;
+}
+
+.colored-text {
+    color: var(--color-blue);
+}
+
+.stroke-1 {
+    border: 3px solid var(--color-light-grey);
+}
+
+/* 
+====================================
+RESPOSNSIVE MOBILE
+====================================
+*/
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: calc(var(--font-size-global) * 0.6);
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    main>img:last-of-type {
+        height: 50%;
+    }
+
+    /* -------- contact form -------- */
+    #contact {
+        width: 100%;
+    }
+
+    input,
+    select,
+    textarea,
+    form>button {
+        font-family: inherit;
+        font-size: calc(var(--font-size-global) * 0.6);
+        border: none;
+        outline: none;
+        background-color: var(--color-dark);
+        margin: 1rem 1rem 1rem 0;
+        color: var(--color-light);
+        padding: 0.5rem 1rem;
+    }
+
+    #main-content {
+        flex-direction: column;
+    }
+}
